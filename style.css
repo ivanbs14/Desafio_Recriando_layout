@@ -1,0 +1,111 @@
+/* resete pre-configuraçoes do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* trabalhando com variaveis no css */
+:root {
+    --ff-heading: 'Dosis', sans-serif;
+    --ff-texting: 'Open Sans', sans-serif;
+
+    --hue: 250;
+    --dark: 0;
+    --bg-primary: hsl(var(--hue), 22%, 20%);
+    --fc-primary: hsl(var(--hue), 0%, 100%);
+    --fc-secundary: hsl(var(--hue), 50%, 80%);
+    --fc-secundary-dark: hsl(var(--dark), 0%, 0%);
+
+    font-size: 62.5%;
+}
+
+/* responsividades da pagina */
+@media (min-width: 700px) {
+
+}
+
+@media (min-width: 930px) {
+}
+
+div.body-content{
+/** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+    margin-bottom: 40px;
+}
+
+
+main{
+    padding: 3.4rem 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    width: 300px;
+    height: 210px;
+}
+
+h1{
+    font-family: var(--ff-heading);
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.textOne{
+    margin-top: 1.6rem;
+    width: 540px;
+}
+
+.spOne{
+    color: #EE24FF;
+}
+
+.spTwo{
+    color: #3F3D56;
+    font-weight: 500;
+}
+
+.spTree{
+    font-weight: 700;
+}
+
+.textOne, .textTwo{
+    font-family: var(--ff-texting);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #828282;
+}
+
+.textTwo{
+    margin-top: 32px;
+}
+
+#links{
+    border-top: 1px solid #ECEFF2; 
+    width: 39rem;
+    margin-top: 4.4rem;
+    padding-top: 16px;
+
+    font-family: var(--ff-texting);
+    font-size: 1.5;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    gap: 4.2rem;
+}
+
+footer.fixar-rodape{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footr{
+    width: 100%;
+    height: 105px;
+    margin-bottom: -3px;
+}
